@@ -15,6 +15,7 @@ import { GatewayModule } from "./gateway/gateway.module";
 import { ConversationsModule } from "./conversations/conversations.module";
 import { MessagesModule } from "./messages/messages.module";
 import { NotificationsModule } from "./notifications/notifications.module";
+import { HelloModule } from "./hello/module";
 
 @Module({
   imports: [
@@ -32,6 +33,7 @@ import { NotificationsModule } from "./notifications/notifications.module";
     PrismaModule,
     MailgunModule,
     NotificationsModule,
+    HelloModule,
     UserModule,
     UploadModule,
     FriendRequestsModule,

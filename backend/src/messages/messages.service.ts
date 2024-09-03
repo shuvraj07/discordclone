@@ -1,8 +1,9 @@
+/* eslint-disable prettier/prettier */
 import { BadRequestException, Injectable } from "@nestjs/common";
 import { Message, User } from "@prisma/client";
-import { ConversationsService } from "src/conversations/conversations.service";
-import { PrismaService } from "src/prisma/prisma.service";
-import { userSelectedFields } from "src/utils/constants/userSelectedFields";
+import { ConversationsService } from "../conversations/conversations.service";
+import { PrismaService } from "../prisma/prisma.service";
+import { userSelectedFields } from "../utils/constants/userSelectedFields";
 
 @Injectable()
 export class MessagesService {
