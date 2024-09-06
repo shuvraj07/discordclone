@@ -30,7 +30,7 @@ export class ConversationsService {
   async createConversation(user: User, participantsIds: Array<string>) {
     const exist = await this.isCreated(participantsIds);
 
-    if (exist) throw new BadRequestException("Conversation already exist");
+    if (exist) throw new BadRequestException("Conversation already exist hello this is ");
 
     const conversation = await this.prisma.conversation.create({
       data: {
